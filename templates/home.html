@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chris Cao</title>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='default.css')}}">
+    <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+    <link href="https://fonts.googleapis.com/
+    css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto
+    +Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400
+    &family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+</head>    
+<body>
+    <i class="fab fa-linkedin"></i>
+    <section class="s1">
+        <div class="main-container">
+            <div class="greeting-wrapper" id="about">
+                <h1>I'M CHRIS CAO</h1>
+            </div>
+
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class='nav_item'>
+                        <a href="#about" class="menu_icon">About</a>
+                        <a href="#expetise" class="menu_icon">Expertise</a>
+                        <a href="#portfolio" class="menu_icon">Portfolio</a>
+                    </div>
+                </div>
+                <div class="left-column">
+                    <img id="avatar" src="{{url_for('static',filename='my_avatar.png')}}" alt="myavatar" width="240" height="250">
+
+                </div>
+                <div class="right-column">
+
+                        <h3 style="text-align: left; line-height: 0; color:var(--mainText:#08FDD8);padding: 80px 50px 0px 0px;font-weight: 500;">
+                            ABOUT ME</h3>
+                        <p style="margin-top:10px; text-align: left; line-height:1.5;">&nbsp;&nbsp;&nbsp;&nbsp;Over the past 4 years, as an ETL/Big Data Developer, BI solution Specialist and a Data Science Practitioner. 
+                            I have great passion in leveraging Big Data and AI technologies to solve interesting real-world problems.</p>
+                        <p style="margin-top:5px;margin-bottom:80px;text-align: left; line-height:1.5;">&nbsp;&nbsp;&nbsp;&nbsp;Well-orgnized person, problem solver, indepedent employee with high attention to details.</p>
+                        <p>&nbsp;&nbsp;Visit my <a id="linkedin_link" target="_blank" href="https://www.linkedin.com/in/chris-cao-datascience/" >Linkedin</a> page for more details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s1">
+        <div class="main-container">
+            <div class="skill-wrapper" id="expetise">
+                 <h3 id='skill_title'>TOP EXPERTISE</h3>
+                <div id="skills_content">
+                    <ul>
+                        <li>Python</li>
+                        <li>Spark</li>
+                        <li>Postgres/Oracle SQL</li>
+                        <li>AWS (S3,EC2,Redshift,EMR etc.)</li>   
+                        <li>HTML/CSS</li>                     
+                        <li>Tableau</li>
+                        <li>R</li>
+                        <li>SAS</li>
+                    </ul>
+                </div>
+                <p><a id="resume_link" target="_blank" href="{{url_for('static',filename='Resume.pdf')}}">Click here</a> to download my Resume</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="s1">
+        <div class="main-container">
+            <div class="portfolio_wrapper" id="portfolio">
+                <div id='portfolio_title'>
+                    <h3 id='skill_title'>PORTFOLIO</h3>
+                </div>
+                <div id='portfolio_content'>
+                    <div class="post-wrapper">
+                        <div>
+                            <div class="post">
+                                <img class="thumbnail" src="{{url_for('static',filename='house.png')}}">
+                                <div class="post-preview">
+                                    <h6 class="post-title">Kaggle: House Price Prediction</h6>
+                                    <p class="post-intro">This is a sentense</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="post">
+                                <img class="thumbnail" src="{{url_for('static',filename='house.png')}}">
+                                <div class="post-preview">
+                                    <h6 class="post-title">Post Title</h6>
+                                    <p class="post-intro">This is a sentense</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="post">
+                                <img class="thumbnail" src="{{url_for('static',filename='house.png')}}">
+                                <div class="post-preview">
+                                    <h6 class="post-title">Post Title</h6>
+                                    <p class="post-intro">This is a sentense</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>                
+                
+            </div>
+        </div>
+    </section>   
+   <section class="s1">
+        <div class="main-container">
+            <h3 style="text-align:center;">Get In Touch</h3>
+
+            <form id="contact-form" action="https://formsubmit.co/utsccy@gmail.com" method="POST">
+
+                <label for="name">Name</label>
+                <input class="input-field" type="text" name="name" placeholder="Your Name" required>
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="_subject" required>
+
+                <label for="email">Email</label>
+                <input class="input-field" type="email" name="email" placeholder="Your Email" required>
+                <!--<input type="hidden" name="_next" value="thankyou.html">-->
+                <label>Message</label>
+                <textarea class="input-field" type="text" name="message" required></textarea>
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
+        </div>
+    </section>      
+</body>
+</html>
