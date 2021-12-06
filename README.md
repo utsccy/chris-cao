@@ -2,4 +2,4 @@
 
 Chris Cao's portfolio website
 
-simple website developed by only HTML and CSS
+very simple website developed by only HTML and CSS built in 1 day
