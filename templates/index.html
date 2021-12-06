@@ -4,8 +4,8 @@
     <title>Chris Cao</title>
     <meta name="viewport" content="width=device-width,
     initial-scale=1,maximum-scale=1,minimum-scale=1" />
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='default.css')}}">
-    <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="static/default.css">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
     <link href="https://fonts.googleapis.com/
     css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto
@@ -31,17 +31,17 @@
                     </div>
                 </div>
                 <div class="left-column">
-                    <img id="avatar" src="{{url_for('static',filename='my_avatar.png')}}" alt="myavatar" width="240" height="250">
+                    <img id="avatar" src="static/my_avatar.png" alt="myavatar" width="240" height="250">
 
                 </div>
                 <div class="right-column">
 
-                        <h3 style="text-align: left; line-height: 0; color:var(--mainText:#08FDD8);padding: 80px 50px 0px 0px;font-weight: 500;">
+                        <h3 style="text-align: left; line-height: 0; color:#08FDD8;padding: 80px 50px 0px 0px;font-weight: 500;">
                             ABOUT ME</h3>
                         <p style="margin-top:10px; text-align: left; line-height:1.5;">&nbsp;&nbsp;&nbsp;&nbsp;Over the past 4 years, as an ETL/Big Data Developer, BI solution Specialist and Data Science Practitioner. 
                             I have great passion in leveraging Big Data and AI technologies to solve interesting real-world problems.</p>
                         <p style="margin-top:5px;margin-bottom:80px;text-align: left; line-height:1.5;">&nbsp;&nbsp;&nbsp;&nbsp;Well-organized person, problem solver, independent employee with high attention to details.</p>
-                        <p>&nbsp;&nbsp;Visit my <a id="linkedin_link" target="_blank" href="https://www.linkedin.com/in/chris-cao-datascience/" >Linkedin</a> page for more details.</p>
+                        <p>&nbsp;&nbsp;Visit my <a id="linkedin_link" target="_blank" href="https://www.linkedin.com/in/chris-cao-yuan" >Linkedin</a> page for more details.</p>
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@
                         <li>SAS</li>
                     </ul>
                 </div>
-                <p><a id="resume_link" target="_blank" href="{{url_for('static',filename='Resume.pdf')}}">Click here</a> to download my Resume</p>
+                <p><a id="resume_link" target="_blank" href="static/resume.pdf">Click here</a> to download my Resume</p>
             </div>
 
         </div>
@@ -79,36 +79,37 @@
                     <div class="post-wrapper">
                         <div>
                             <div class="post">
-                                <img class="thumbnail" src="{{url_for('static',filename='house.png')}}">
+                                <img class="thumbnail" src="static/house.png">
                                 <div class="post-preview">
-                                    <h6 class="post-title">Kaggle: House Price Prediction</h6>
-                                    <p class="post-intro">This is a sentense</p>
-                                    <a href="#">Read More</a>
+                                    <h6 class="post-title">House Price Prediction</h6>
+                                    <p class="post-intro">Make Prediction of house price based on 76 explanatory features.</p>
+                                    <a style='color:black' href="https://github.com/utsccy/house_price_prediction">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="post">
+                                <img class="thumbnail" src="static/airbnb.png">
+                                <div class="post-preview">
+                                    <h6 class="post-title">Airbnb Pricing & Recommender System</h6>
+                                    <p class="post-intro">Predict listing prices, conduct sentiment analysis on Airbnb reviews, build recommender system to provide suggestion to Airbnb users. </p>
+                                    <a style='color:black' href="https://github.com/utsccy/airbnb_project">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="post">
+                                <img class="thumbnail" src="static/heart.png">
+                                <div class="post-preview">
+                                    <h6 class="post-title">Heart Disease Detection</h6>
+                                    <p class="post-intro">Utilize Machine Learning Algorithm to early detect CVDs.</p>
+                                    <a style='color:black' href="https://github.com/utsccy/heart-disease-prediction">Read More</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div>
-                            <div class="post">
-                                <img class="thumbnail" src="{{url_for('static',filename='house.png')}}">
-                                <div class="post-preview">
-                                    <h6 class="post-title">Post Title</h6>
-                                    <p class="post-intro">This is a sentense</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="post">
-                                <img class="thumbnail" src="{{url_for('static',filename='house.png')}}">
-                                <div class="post-preview">
-                                    <h6 class="post-title">Post Title</h6>
-                                    <p class="post-intro">This is a sentense</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
 
@@ -139,9 +140,5 @@
             </form>
         </div>
     </section>      
-
-    <!--script section-->
-    <script src="assets/js/jquery.min.js"></script>
-
 </body>
 </html>
